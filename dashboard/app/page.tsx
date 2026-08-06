@@ -28,21 +28,20 @@ const examsTotal =
   values["Exams gesamt "] ??
   48;
 
-  return (
-    <main className="flex min-h-screen items-center justify-center bg-gray-100">
-      <div className="flex items-center gap-16 rounded-3xl bg-white p-16 shadow-xl">
-        <CircularProgress
-          value={ects}
-          total={ectsTotal}
-        />
+return (
+  <main className="flex justify-center bg-gray-100 p-8">
+    <div className="flex items-center gap-16 rounded-3xl bg-white p-16 shadow-xl">
+      <CircularProgress
+        value={ects}
+        total={ectsTotal}
+      />
 
-        <StatsCard
-          ects={ects}
-          ectsTotal={ectsTotal}
-          exams={exams}
-          examsTotal={examsTotal}
-        />
-      </div>
-    </main>
-  );
-}
+      <StatsCard
+        ects={ects}
+        ectsTotal={ectsTotal}
+        exams={exams}
+        examsTotal={examsTotal}
+      />
+    </div>
+  </main>
+);
