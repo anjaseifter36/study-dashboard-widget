@@ -1,0 +1,93 @@
+@import "tailwindcss";
+
+:root {
+  --background: #eef4fb;
+  --card: #ffffff;
+  --text: #18263c;
+  --muted: #95a3b8;
+  --line: #edf2f7;
+}
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+html,
+body{
+  width:100%;
+  min-height:100%;
+}
+
+body{
+  background:var(--background);
+  font-family:
+    Inter,
+    ui-sans-serif,
+    system-ui,
+    sans-serif;
+    color:var(--text);
+}
+
+main{
+  min-height:100vh;
+}
+
+.dashboard-card{
+
+  background:#fff;
+
+  border-radius:40px;
+
+  box-shadow:
+    0 40px 90px rgba(20,36,60,.05),
+    0 10px 25px rgba(20,36,60,.03);
+
+}
+
+.divider{
+
+  width:1px;
+  background:#edf2f7;
+
+}
+
+.title-big{
+
+  font-size:86px;
+  font-weight:700;
+  line-height:1;
+
+}
+
+.number{
+
+  font-size:46px;
+  font-weight:700;
+  line-height:1;
+
+}
+
+.label{
+
+  margin-top:8px;
+  font-size:22px;
+  color:#93a2b7;
+
+}
+
+.icon-circle{
+
+  width:64px;
+  height:64px;
+
+  border-radius:999px;
+
+  background:#f6fbff;
+
+  display:flex;
+  align-items:center;
+  justify-content:center;
+
+}
