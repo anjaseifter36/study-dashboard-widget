@@ -27,7 +27,6 @@ const examsTotal =
   values["Exams gesamt"] ??
   values["Exams gesamt "] ??
   48;
-
 return (
   <main className="flex justify-center bg-gray-100 p-8">
     <div className="flex items-center gap-16 rounded-3xl bg-white p-16 shadow-xl">
@@ -45,3 +44,4 @@ return (
     </div>
   </main>
 );
+}
