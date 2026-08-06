@@ -1,7 +1,7 @@
 import { notion, databaseId } from "./lib/notion";
 import CircularProgress from "./components/CircularProgress";
 import StatsCard from "./components/StatsCard";
-
+export const dynamic = "force-dynamic";
 export default async function Home() {
   const response = await notion.dataSources.query({
     data_source_id: databaseId,
